@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  font-family: 'Merienda One', cursive;
+  font-family: 'Roboto & Nunito';
 }
 .res-img {
   font-size: 450%;
@@ -20,12 +20,12 @@ nav {
 /* #p1{
   height: 350px;
 } */
-.parallax-container {
+/* .parallax-container {
   min-height: 580px;
   line-height: 0;
-  height: 600px;
+  height: 100%;
   color: rgba(10, 27, 32, 0.7);
-}
+} */
 p{
   color:white;
 }
