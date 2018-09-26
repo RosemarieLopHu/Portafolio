@@ -1,109 +1,212 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-  <script src="main.js"></script>
+  <title>Rosemarie Lopez</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/materialize.css">
+  <link rel="stylesheet" href="./css/materialize.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="shortcut icon" href="./assets/img/LogoRLH.png" type="image/x-icon">
 </head>
+
 <body>
-<div id="main-nav">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-        
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+  <div class="navbar-fixed" id="home">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Rosemarie Lopez</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home"><img src="./assets/img/home-solid.svg" alt="home" width="35" class="icono"></a></li>
+          <li><a href="#sobremi">Sobre mi</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#skills">Conocimientos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
-      <!--/.nav-collapse -->
-    </div>
-  </nav>
-</div>
-
-<div id="home" class="content-section">
-  <div class="container">
-    <div class="row">
-      <div class="page-header">
-        <h1>Rosemarie Lopez</h1>
-      </div>
-    </div>
+    </nav>
+    <!-- Versiòn Mobile -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#sobremi">Sobre mi</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#skills">Conocimientos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </div>
-</div>
-
-<div id="about" class="content-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>About Me</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6">
-        <img src="" alt="foto" class="img-rounded portrait pull-right">
-        <p class="lead">Hola, Soy Rosemarie Lopez.</p>
-      </div>
-      <div class="col-sm-3 col-xs-6">
-        <h2>Programas <em>usados</em></h2>
-        <ul>
-          <li>HTML 5</li>
-          <li>CSS &amp; Bootstrap</li>
-          <li>Javascript &amp; jQuery</li>
-          <li>git &amp; gitHub</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="portfolio" class="content-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <h1>Portfolio</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <h2>Proyectos</h2>
-      </div>
-    </div>
-   
-<div id="contact" class="content-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Contacto</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8">
+  <!-- Parallax -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <!-- About me -->
         <div class="row">
-          <div class="col-sm-6 contact-button">
-            <a class="btn btn-default btn-lg btn-block" href="https://github.com/RosemarieLopHu"><i class="fa fa-github fa-2x"></i> GitHub</a>
+          <div class="col s5 offset-s1" id="sobremi">
+            <img class="circle responsive-img" src="./assets/img/LogoRLH.png" alt="Rosemarie Lopez">
           </div>
-          <div class="col-sm-6 contact-button">
-            <a class="btn btn-default btn-lg btn-block" href="https://www.linkedin.com/in/rosemarielh/"><i class="fa fa-linkedin fa-2x"></i> LinkedIn</a>
+          <div class="col s6">
+            <h5 class="descripcion">
+              Desarrolladora front-end y con un background en Ingeniería Química, mi objetivo es siempre mejorar y
+              hacer del
+              autoaprendizaje una herramienta eficaz para mi desarrollo
+              profesional. Me apasiona la investigación, trabajar en equipo y la tecnología.
+            </h5>
+          </div>
+        </div>
+
+        <!--     <div class="row center">
+            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          </div> -->
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/img/opl-parallax-universe.jpg" alt="Unsplashed background img 2" style="opacity: 1; transform: translate3d(-50%, 0px, 0px);"></div>
+  </div>
+
+
+  <!--Proyectos-->
+  <section>
+    <div class="section" style="background-color: #141414;" id="proyectos">
+      <div class="container" id="proyectos">
+        <h3 class="header text_b center" style="color:white">Proyectos</h3>
+        <div class="row ">
+          <div class="col s12 m12 l4">
+            <div class="card  black">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/Captura.PNG">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator purple-text text-lighten-5"> DataDashboard <i class="mdi-navigation-more-vert right"></i></span>
+                <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim-2018-05-bc-core-am-datadashboard"><i
+                      class="fab fa-github-alt"></i></a></p>
+              </div>
+              <div class="card-reveal  black">
+                <span class="card-title purple-text text-lighten-5">DataDashboard <i class="mdi-navigation-close right"></i></span>
+                <p>
+                  El reto de este proyecto fue crear una interfaz donde las Training Managers (TMs) puedan ver y
+                  usar la data de progreso del Learning Management System (LMS) de las estudiantes, para ello se
+                  elaboró
+                  un data dashboard (tablero de visualización de datos).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 l4">
+            <div class="card  black">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/red social.PNG">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator purple-text text-lighten-5">Red Social <i class="mdi-navigation-more-vert right"></i></span>
+                <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim-2018-05-bc-core-am-socialnetwork"><i
+                      class="fab fa-github-alt"></i></a></p>
+              </div>
+              <div class="card-reveal  black">
+                <span class="card-title purple-text text-lighten-5">Red Social: Healthy Food<i class="mdi-navigation-close right"></i></span>
+                <p>
+                  Healthy Food es una red social cuyo objetivo es que los usuarios recomienden recetas, tiendas,
+                  productos,
+                  restaurantes que cuenten con los productos y/o servicios de alimentación saludable.
+                  Además de compartir los beneficios de llevar una alimentación saludable.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 l4">
+            <div class="card  black">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/img/Absoluta.PNG">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator purple-text text-lighten-5">Markdown Links <i class="mdi-navigation-more-vert right"></i></span>
+                <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim20181-Track-FE-markdown-list"><i
+                  class="fab fa-github-alt"></i></a></p>
+              </div>
+              <div class="card-reveal  black">
+                <span class="card-title purple-text text-lighten-5">Markdown Links <i class="mdi-navigation-close right"></i></span>
+                <p>El objetivo práctico de este proyecto es que aprendas cómo crear tu propia librería (o biblioteca - library) en JavaScript.
+                  Diseñar una librería es fundamental porque que te permite pensar en la interfaz (API) de los módulos y como serán usados por otros developers, 
+                  se tuvo especial consideración en peculiaridades del lenguaje, convenciones y buenas prácticas.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill Sets -->
+  <div class="section" id="skills">
+    <div class="container">
+      <h1 class="center black-text">Conocimientos</h1>
+      <div class="row">
+        <img class="res-img"><i class="fab fa-js-square"></i>
+        <img class="res-img"><i class="fab fa-node"></i>
+        <img class="res-img"><i class="fab fa-html5"></i>
+        <img class="res-img"><i class="fab fa-css3-alt"></i>
+      </div>
+    </div>
+  </div>
+  <!-- contacto -->
+  <!-- Parallax -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">You can never understand everything.
+            But, you should push yourself to understand the system.
+            - Ryan Dahl
+          </h5>
+        </div>
+        <br>
+        <div class="footer">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Contacto</h5> 
+              <ul>
+                <li><a><i class="fas fa-mail-bulk"></i></a>
+                <span class="link">rosemarie61@gmail.com</span></li>
+                <br>
+                <li><a target="_blank" href="https://www.linkedin.com/in/rosemarielh/"><i class="fab fa-linkedin-in"></i></a>LinkedIn</li>
+                <br>
+                <li><a target="_blank" href="https://github.com/RosemarieLopHu"><i class="fab fa-github"></i></a>GitHub</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="parallax"><img src="assets/img/blue-mountain.png" alt="Unsplashed background3" style="opacity: 1; transform: translate3d(-50%, 4px, 0px);"></div>
   </div>
-</div>
+
+  <!-- Boton Net, contacto -->
+  <div class="fixed-action-btn vertical">
+    <a class="btn-floating btn-large grey darken-4"><i class="fas fa-globe"></i></a>
+    <ul>
+      <li><a target="_blank" href="https://www.linkedin.com/in/rosemarielh/" class="btn-floating grey darken-2">
+          <i class="fab fa-linkedin-in"></i></a></li>
+      <li><a target="_blank" href="https://github.com/RosemarieLopHu" class="btn-floating grey darken-3">
+          <i class="fab fa-github"></i></a></li>
+    </ul>
+  </div>
+  <!-- FOOTER -->
+
+  <footer class="section page-footer black">
+    <div class="container center-align">
+      &#169; R.L.H 2018
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!--   <script src="app.js"></script> -->
 </body>
+
 </html>
