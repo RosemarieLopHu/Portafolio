@@ -13,57 +13,77 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="shortcut icon" href="./assets/img/LogoRLH.png" type="image/x-icon">
 </head>
 
 <body>
-  <div class="navbar-fixed" id="home">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="rigth brand-logo"><img src="assets/img/LogoRLH.png" alt="R.L.H" width="35" class="icono"></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#home"><img src="./assets/img/home-solid.svg" alt="home" width="35" class="icono"></a></li>
-          <li><a href="#sobremi">Sobre mi</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#skills">Conocimientos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Versiòn Mobile -->
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#sobremi">Sobre mi</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#skills">Conocimientos</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </div>
-  <!-- Parallax -->
-  <div id="index-banner" class="parallax-container">
-      <div class="section no-pad-bot">
+  <header>
+    <div class="navbar-fixed" id="home">
+      <nav role="navigation">
+        <div class="nav-wrapper">
+          <a id="logo-container" href="#" class="rigth brand-logo"><img src="assets/img/LogoRLH.png" alt="R.L.H" width="35"
+              class="icono"></a>
+          <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#home"><img src="./assets/img/home-solid.svg" alt="home" width="30" class="icono"></a></li>
+            <li><a href="#sobremi">Sobre mi</a></li>
+            <li><a href="#proyectos">Portafolio</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Versiòn Mobile -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#sobremi">Sobre mi</a></li>
+        <li><a href="#proyectos">Portafolio</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+    <!-- Parallax -->
+  <section>
+    <div id="sobremi" class="parallax-container">
+      <div class="section">
         <div class="container">
-          <br><br>
-          <h1 class="header center teal-text text-lighten-2">Rosemarie Lopez</h1>
+
+          <h1 class="header center teal-text text-lighten-2" style="font-size: 80px">Rosemarie Lopez</h1>
           <div class="row center">
             <h5 class="header col s12 light">Front-End Developer</h5>
           </div>
           <br>
-          <br>
-  
+          <div class="col s12">
+            <div class="center">
+              <h4 class="background"><span>-Sobre Mi-</span></h4>
+            </div>
+            <br>
+            <div class="col s12 m6">
+              <img class="circle responsive-img" src="assets/img/Code-girl.jpg" alt="RLH">
+            </div>
+            <div class="col s12 m6">
+              <p class="descripcion-me">
+                Hola! Soy <b>Rosemarie López , desarrolladora Front-End </b> e ingeniera química que ha descubierto en
+                la programación una nueva pasión. Innovadora, autodidacta, empática y perseverente me gusta la buena comida, el básquetbol, leer y codear.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
       <div class="parallax"><img src="assets/img/opl-parallax-universe.jpg" alt="Unsplashed background img 1" style="transform: translate3d(-50%, 237.544px, 0px); opacity: 1;">
       </div>
     </div>
-
-    <!--Proyectos-->
+  </section>
+  <!--Proyectos-->
   <section>
-    <div class="section" style="background-color: #141414;" id="proyectos">
+    <div class="section" style="background-color: #323232;" id="proyectos">
       <div class="container" id="proyectos">
-        <h3 class="header text_b center" style="color:white">Proyectos</h3>
+        <h3 class="header text_b center" style="color:white">Portafolio</h3>
         <div class="row ">
-          <div class="col s12 m4">
+          <div class="col s12 m6">
             <div class="card  black">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="./assets/img/dashboard.PNG">
@@ -86,7 +106,7 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m4">
+          <div class="col s12 m6">
             <div class="card  black">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="./assets/img/social.png">
@@ -109,7 +129,7 @@
               </div>
             </div>
           </div>
-          <div class="col s12 m4">
+          <div class="col s12 m6">
             <div class="card  black">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="./assets/img/mdLinks.png">
@@ -140,8 +160,8 @@
   <!-- Skill Sets -->
   <div class="section" id="skills">
     <div class="container">
-      <h1 class="center black-text">Conocimientos</h1>
-      <div class="row">
+      <h1 class="header center black-text">Habilidades</h1>
+      <div class="row ">
         <img class="res-img"><i class="fab fa-js-square"></i>
         <img class="res-img"><i class="fab fa-node"></i>
         <img class="res-img"><i class="fab fa-html5"></i>
@@ -169,9 +189,9 @@
                 <li><a><i class="fas fa-mail-bulk"></i></a>
                   <span class="link">rosemarie61@gmail.com</span></li>
                 <br>
-                <li><a target="_blank" href="https://www.linkedin.com/in/rosemarielh/"><i class="fab fa-linkedin-in"></i></a>LinkedIn</li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/rosemarielh/"><i class="fab fa-linkedin-in"></i></a> LinkedIn</li>
                 <br>
-                <li><a target="_blank" href="https://github.com/RosemarieLopHu"><i class="fab fa-github"></i></a>GitHub</li>
+                <li><a target="_blank" href="https://github.com/RosemarieLopHu"><i class="fab fa-github"></i></a> GitHub</li>
               </ul>
             </div>
           </div>
@@ -181,18 +201,8 @@
     <div class="parallax"><img src="assets/img/blue-mountain.png" alt="Unsplashed background3" style="opacity: 1; transform: translate3d(-50%, 4px, 0px);"></div>
   </div>
 
-  <!-- Boton Net, contacto -->
-  <!--  <div class="fixed-action-btn vertical">
-    <a class="btn-floating btn-large grey darken-4"><i class="fas fa-globe"></i></a>
-    <ul>
-      <li><a target="_blank" href="https://www.linkedin.com/in/rosemarielh/" class="btn-floating grey darken-2">
-          <i class="fab fa-linkedin-in"></i></a></li>
-      <li><a target="_blank" href="https://github.com/RosemarieLopHu" class="btn-floating grey darken-3">
-          <i class="fab fa-github"></i></a></li>
-    </ul>
-  </div> -->
-  <!-- FOOTER -->
 
+  <!-- FOOTER -->
   <footer class="section page-footer black">
     <div class="container center-align">
       &#169; R.L.H 2018
