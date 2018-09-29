@@ -1,241 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rosemarie Lopez</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="./css/materialize.css">
-  <link rel="stylesheet" href="./css/materialize.min.css">
-  <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/LogoMark.png">
+  <link rel="stylesheet" href="assets/materialize/css/materialize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.scss">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <!-- icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Domine|Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="shortcut icon" href="./assets/img/LogoRLH.png" type="image/x-icon">
+  <title>Rosemarie Lopez</title>
 </head>
 
 <body>
-  <header>
-    <div class="navbar-fixed" id="home">
-      <nav role="navigation">
-        <div class="nav-wrapper">
-          <a id="logo-container" href="#" class="rigth brand-logo"><img src="assets/img/LogoRLH.png" alt="R.L.H" width="35"
-              class="icono"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#home"><img src="./assets/img/home-solid.svg" alt="home" width="30" class="icono"></a></li>
-            <li><a href="#sobremi">Sobre mi</a></li>
-            <li><a href="#proyectos">Portafolio</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+  <!-- Menu navbar -->
+  <div class="navbar-fixed" id="navbar">
+    <nav class="navbar-color">
+      <div class="nav-wrapper">
+        <a href="#navbar" class="logo-m"><img class="logo" src="assets/img/LogoMark.png" alt="RLH"></a>
+        <a href="#" id="navMenu" class="hide-on-med-and-up"><i class="material-icons right">menu</i></a>
+        <ul class="right menu-list hide-on-small-and-down">
+          <li id="list1"><a href="#aboutme">Sobre MÍ</a></li>
+          <li id="list2"><a href="#skills">Skills</a></li>
+          <li id="list3"><a href="#portfolio">Portafolio</a></li>
+          <li id="l4"><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="menu-mobile grey lighten-4">
+          <ul class="list blue-grey-text">
+            <li class="grey darken-2">
+              <a href="#navbar" class="brand-logo"><img class="logo" src="assets/img/LogoMark.png" alt="LP"></a>
+              <span id="navClose"><i class="material-icons right white-text">clear</i></span>
+            </li>
+            <li><a href="#aboutme">Sobre mi</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#contact">Contácto</a></li>
           </ul>
         </div>
-      </nav>
-      <!-- Versiòn Mobile -->
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="#sobremi">Sobre mi</a></li>
-        <li><a href="#proyectos">Portafolio</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-  </header>
-    <!-- Parallax -->
-  <section>
-    <div id="sobremi" class="parallax-container">
-      <div class="section">
-        <div class="container">
-          <h1 class="header center teal-text text-lighten-2" style="font-size: 80px">Rosemarie Lopez</h1>
-          <div class="row center">
-            <h5 class="header col s12 light">Front-End Developer</h5>
-          </div>
-          <br>
-          <div class="col s12">
-            <div class="center">
-              <h4 class="background"><span>-Sobre Mi-</span></h4>
-            </div>
-            <br>
-            
-      <div class="col s12 m8 offset-m2 l6 offset-l3">
-          <div>
-            <div class="row valign-wrapper">
-              <div class="col s4">
-                <img src="assets/img/me.jpeg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-              </div>
-              <div class="col s10">
-                <span class="black-text">
-                    Hola! Soy <b>Rosemarie López , desarrolladora Front-End </b> e ingeniera química que ha descubierto en
-                    la programación una nueva pasión. Innovadora, autodidacta, empática y perseverente me gusta la buena comida, el básquetbol, leer y codear.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-          <!--   <div class="col s2">
-              <img class="circle responsive-img" src="assets/img/Code-girl.jpg" alt="RLH">
-            </div>
-            <div class="col s6 m4 ">
-              <span class="descripcion">
-                Hola! Soy <b>Rosemarie López , desarrolladora Front-End </b> e ingeniera química que ha descubierto en
-                la programación una nueva pasión. Innovadora, autodidacta, empática y perseverente me gusta la buena comida, el básquetbol, leer y codear.
-              </span>
-            </div> -->
-            <div class="row center">
-                <h5 class="header col s12 light">You can never understand everything.
-                  But, you should push yourself to understand the system.
-                  - Ryan Dahl
-                </h5>
-              </div>
-          </div>
+      </div>
+    </nav>
+  </div>
 
-        </div>
-      </div>
-      <div class="parallax"><img src="assets/img/opl-parallax-universe.jpg" alt="Unsplashed background img 1" style="transform: translate3d(-50%, 237.544px, 0px); opacity: 8;">
-      </div>
-    </div>
-  </section>
-  <!--Proyectos-->
-  <section>
-    <div class="section" style="background-color: #323232;" id="proyectos">
-      <div class="container" id="proyectos">
-        <h3 class="header text_b center" style="color:white">Portafolio</h3>
-        <div class="row ">
-          <div class="col s12 m6">
-            <div class="card  black">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/dashboard.PNG">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator purple-text text-lighten-5"> DataDashboard <i class="mdi-navigation-more-vert right"></i></span>
-                <hr>
-                <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim-2018-05-bc-core-am-datadashboard"><i
-                      class="fab fa-github"></i> Ver Proyecto </a></p>
-              </div>
-              <div class="card-reveal  black">
-                <span class="card-title purple-text text-lighten-5">DataDashboard <i class="mdi-navigation-close right"></i></span>
-                <hr>
-                <p>
-                  El reto de este proyecto fue crear una interfaz donde las Training Managers (TMs) puedan ver y
-                  usar la data de progreso del Learning Management System (LMS) de las estudiantes, para ello se
-                  elaboró una data dashboard (tablero de visualización de datos).
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card  black">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/social.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator purple-text text-lighten-5">Red Social <i class="mdi-navigation-more-vert right"></i></span>
-                <hr>
-                <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim-2018-05-bc-core-am-socialnetwork"><i
-                      class="fab fa-github"></i> Ver Proyecto </a></p>
-              </div>
-              <div class="card-reveal  black">
-                <span class="card-title purple-text text-lighten-5">Red Social: Healthy Food<i class="mdi-navigation-close right"></i></span>
-                <hr>
-                <p>
-                  Healthy Food es una red social cuyo objetivo es que los usuarios recomienden recetas, tiendas,
-                  productos,
-                  restaurantes que cuenten con los productos y/o servicios de alimentación saludable.
-                  Además de compartir los beneficios de llevar una alimentación saludable.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m6">
-            <div class="card  black">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./assets/img/mdLinks.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator purple-text text-lighten-5">Markdown Links <i class="mdi-navigation-more-vert right"></i></span>
-                <hr>
-                <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim20181-Track-FE-markdown-list"><i
-                      class="fab fa-github"></i> Ver Proyecto</a></p>
-              </div>
-              <div class="card-reveal  black">
-                <span class="card-title purple-text text-lighten-5">Markdown Links <i class="mdi-navigation-close right"></i></span>
-                <hr>
-                <p>
-                  El objetivo práctico de este proyecto es que aprendas cómo crear tu propia librería (o biblioteca -
-                  library) en JavaScript.
-                  Diseñar una librería es fundamental porque que te permite pensar en la interfaz (API) de los módulos
-                  y como serán usados por otros developers, se tuvo especial consideración en peculiaridades del lenguaje, convenciones y buenas prácticas.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+  <!-- section cover -->
+  <section class="cover" id="cover">
+    <canvas id="canvas"></canvas>
+    <div class="cover-content center-align">
+      <div class="cover-content__title">Rosemarie Lopez</div>
+      <span class="cover-content__subtitle">Front-end Developer</span>
+      <div class="btn-floating btn-large pulse mg-top" id="down"><i class="material-icons">&#xE313;</i></div>
     </div>
   </section>
 
-  <!-- Skill Sets -->
-  <div class="section" id="skills">
+  <!-- section about me -->
+  <section id="aboutme" class="section">
     <div class="container">
-      <h1 class="header center black-text">Habilidades</h1>
-      <div class="row ">
-        <img class="res-img"><i class="fab fa-js-square"></i>
-        <img class="res-img"><i class="fab fa-node"></i>
-        <img class="res-img"><i class="fab fa-html5"></i>
-        <img class="res-img"><i class="fab fa-css3-alt"></i>
-      </div>
-      <div class="row ">
-        <img class="res-img"><i class="fab fa-js-square"></i>
-        <img class="res-img"><i class="fab fa-node"></i>
-        <img class="res-img"><i class="fab fa-html5"></i>
-        <img class="res-img"><i class="fab fa-css3-alt"></i>
+      <div class="row">
+        <div class="section__title main center-align">SOBRE MI</div>
+        <div class="col s12 m6 l4 offset-m3 offset-l4 content-line">
+          <span class="line"></span>
+          <i class="fa fa-user fa-2x blue-grey-text text-darken-2" aria-hidden="true"></i>
+          <span class="line"></span>
+        </div>
+        <div class="col s12 m6 l6 offset-list1 pt-5">
+          <div class="section__text">Hola, soy <b>Rosemarie López , desarrolladora Front-End </b> egresada de
+            Laboratoria y Bach. en Ingeniería QuÍmica que ha descubierto en la programación una nueva pasión.
+            Innovadora, autodidacta, empática y perseverente, me encanta disfrutar de la buena Gastronomía, el
+            basketball, leer y el coding.
+          </div>
+        </div>
+        <div class="col s12 m6 l4 offset-list1">
+          <img src="assets/img/Image2.jpeg" class="circle responsive-img" alt="" width="100%" id="photo">
+        </div>
       </div>
     </div>
-  </div>
+    <div class="divider" id="sec2"></div>
+  </section>
 
-  <!-- contacto -->
-  <!-- Parallax -->
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br>
-        <div class="footer">
+  <!-- section skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="section__title main center-align">SKILLS</div>
+        <div class="col s12 m6 l4 offset-m3 offset-l4 content-line">
+          <span class="line"></span>
+          <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+          <span class="line"></span>
+        </div>
+        <div class="col s12">
           <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Contacto</h5>
-              <ul>
-                <li><a><i class="fas fa-mail-bulk"></i></a>
-                  <span class="link">rosemarie61@gmail.com</span></li>
-                <br>
-                <li><a target="_blank" href="https://www.linkedin.com/in/rosemarielh/"><i class="fab fa-linkedin-in"></i></a> LinkedIn</li>
-                <br>
-                <li><a target="_blank" href="https://github.com/RosemarieLopHu"><i class="fab fa-github"></i></a> GitHub</li>
-              </ul>
+            <div class="col s12 m6">
+              <div class="section-skill z-depth-1">
+                <div class="section-skill__title blue-grey-text"> Lenguajes de Programación</div>
+                <div class="chip"><img src="assets/img/icons/html.png" alt="html">HTML</div>
+                <div class="chip"><img src="assets/img/icons/css.png" alt="css">CSS</div>
+                <div class="chip"><img src="assets/img/icons/javascript.png" alt="Javascript">JavaScript</div>
+              </div>
+              <div class="section-skill z-depth-0">
+                <div class="section-skill__title blue-grey-text"> Librería JavaScript</div>
+                <div class="chip"><img src="assets/img/icons/jquery-icon.png" alt="JQUERY">Jquery</div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="section-skill">
+                <div class="section-skill__title blue-grey-text center-align">Front-end Frameworks</div>
+                <div class="chip"><img src="assets/img/icons/materialize.png" alt="Materialize">Materialize</div>
+                <div class="chip"><img src="assets/img/icons/bootstrap.png" alt="Bootstrap">Bootstrap</div>
+              </div>
+              <div class="section-skill">
+                <div class="section-skill__title blue-grey-text"> Herramientas de Gestión</div>
+                <div class="chip"><img src="assets/img/icons/slack.png" alt="slack">slack</div>
+                <div class="chip"><img src="assets/img/icons/trello.png" alt="trello">Trello</div>
+              </div>
+              <div class="section-skill">
+                <div class="section-skill__title blue-grey-text center-align">Plataforma de Desarrollo</div>
+                <div class="chip"><img src="assets/img/icons/github.png" alt="github">GitHub</div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="section-skill">
+                <div class="section-skill__title blue-grey-text center-align">Server side </div>
+                <div class="chip"><img src="assets/img/icons/nodejs.png" alt="nodejs">Node js</div>
+              </div>
+              <div class="section-skill">
+                <div class="section-skill__title blue-grey-text"> Task Runners / Package Managers </div>
+                <div class="chip"><img src="assets/img/icons/npm.png" alt="css">Gestor de paquetes</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="assets/img/blue-mountain.png" alt="Unsplashed background3" style="opacity: 1; transform: translate3d(-50%, 4px, 0px);"></div>
-  </div>
+    <div class="divider" id="sec2"></div>
+  </section>
 
-
-  <!-- FOOTER -->
-  <footer class="section page-footer black">
-    <div class="container center-align">
-      &#169; R.L.H 2018
+  <!-- Section portfolio -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="row ">
+        <div class="section__title main center-align">PORTAFOLIO</div>
+        <div class="col s12 m6 l4 offset-m3 offset-l4 content-line">
+          <span class="line"></span>
+          <span class="material-icons blue-grey-text text-darken-2">work</span>
+          <span class="line"></span>
+        </div>
+        <div class="col s12 m6 15">
+          <div class="card  black">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./assets/img/dashboard.PNG">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator purple-text text-lighten-5"> DataDashboard <i class="mdi-navigation-more-vert right"></i></span>
+              <hr>
+              <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim-2018-05-bc-core-am-datadashboard"><i
+                    class="fab fa-github"></i> Ver Proyecto </a></p>
+            </div>
+            <div class="card-reveal  black">
+              <span class="card-title purple-text text-lighten-5">DataDashboard <i class="mdi-navigation-close right"></i></span>
+              <hr>
+              <p style="color:white">
+                El reto de este proyecto fue crear una interfaz donde las Training Managers (TMs) puedan ver y
+                usar la data de progreso del Learning Management System (LMS) de las estudiantes, para ello se
+                elaboró una data dashboard (tablero de visualización de datos).
+              </p>
+              <div class="col s6 m10">
+                <div class="chip"><img src="assets/img/icons/javascript.png" alt="Javascript">JAVASCRIPT</div>
+                <div class="chip"><img src="assets/img/icons/html.png" alt="html">HTML</div>
+                <div class="chip"><img src="assets/img/icons/css.png" alt="css">CSS</div>
+                <div class="chip"><img src="assets/img/icons/trello.png" alt="trello">Trello</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 15">
+          <div class="card  black">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./assets/img/social.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator purple-text text-lighten-5">Red Social <i class="mdi-navigation-more-vert right"></i></span>
+              <hr>
+              <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim-2018-05-bc-core-am-socialnetwork"><i
+                    class="fab fa-github"></i> Ver Proyecto </a></p>
+            </div>
+            <div class="card-reveal  black">
+              <span class="card-title purple-text text-lighten-5">Red Social: Healthy Food<i class="mdi-navigation-close right"></i></span>
+              <hr>
+              <p style="color:white">
+                Healthy Food es una red social cuyo objetivo es que los usuarios recomienden recetas, tiendas,
+                productos,
+                restaurantes que cuenten con los productos y/o servicios de alimentación saludable.
+                Además de compartir los beneficios de llevar una alimentación saludable.
+              </p>
+              <div class="col s6 m10">
+                  <div class="chip"><img src="assets/img/icons/javascript.png" alt="Javascript">JAVASCRIPT</div>
+                  <div class="chip"><img src="assets/img/icons/html.png" alt="html">HTML</div>
+                  <div class="chip"><img src="assets/img/icons/css.png" alt="css">CSS</div>
+                  <div class="chip"><img src="assets/img/icons/trello.png" alt="trello">Trello</div>
+                  <div class="chip"><img src="assets/img/icons/jquery-icon.png" alt="JQUERY">Jquery</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 15" >
+          <div class="card  black">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="./assets/img/mdLinks.png">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator purple-text text-lighten-5">Markdown Links <i class="mdi-navigation-more-vert right"></i></span>
+              <hr>
+              <p><a class="purple-text text-lighten-5" target="_blank" href="https://github.com/RosemarieLopHu/lim20181-Track-FE-markdown-list"><i
+                    class="fab fa-github"></i> Ver Proyecto</a></p>
+            </div>
+            <div class="card-reveal  black">
+              <span class="card-title purple-text text-lighten-5">Markdown Links <i class="mdi-navigation-close right"></i></span>
+              <hr>
+              <p style="color:white">
+                El objetivo práctico de este proyecto es que aprendas cómo crear tu propia librería (o biblioteca -
+                library) en JavaScript.
+                Diseñar una librería es fundamental porque que te permite pensar en la interfaz (API) de los módulos
+                y como serán usados por otros developers, se tuvo especial consideración en peculiaridades del
+                lenguaje, convenciones y buenas prácticas.
+              </p>
+              <div class="col s6 m10">
+                  <div class="chip"><img src="assets/img/icons/javascript.png" alt="Javascript">JAVASCRIPT</div>
+                  <div class="chip"><img src="assets/img/icons/trello.png" alt="trello">Trello</div>
+                  <div class="chip"><img src="assets/img/icons/npm.png" alt="css">Gestor de paquetes</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    </div>
+
+
+  </section>
+
+  <!-- section contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section__title main center-align">CONTACTO</div>
+        <div class="col s12 m6 l4 offset-m3 offset-l4 content-line">
+          <span class="line"></span>
+          <span class="material-icons blue-grey-text text-darken-2"><i class="material-icons">&#xE8A3;</i></span>
+          <span class="line"></span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m6 l5 offset-list2">
+          <div class="col s12 m5 list3">
+            <ul>
+              <li><a><i class="fas fa-mail-bulk"></i></a>
+                <span class="link">rosemarie61@gmail.com</span></li>
+              <br>
+              <li><a target="_blank" href="https://www.linkedin.com/in/rosemarielh/"><i class="fab fa-linkedin-in"></i></a>
+                LinkedIn</li>
+              <br>
+              <li><a target="_blank" href="https://github.com/RosemarieLopHu"><i class="fab fa-github"></i></a> GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- footer -->
+  <footer class="page-footer grey darken-2 center-align">
+    <span class="section__title small title__footer white-text"> &#169; R.L.H 2018</span>
   </footer>
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!--   <script src="app.js"></script> -->
+
+  <!-- Script -->
+  <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/materialize/js/materialize.js"></script>
+
+  <!-- js par el header buble animado  -->
+  <script src="assets/js/vendor/EasePack.min.js"></script>
+  <script src="assets/js/vendor/TweenLite.min.js"></script>
+  <script src="assets/js/vendor/demo-2.js"></script>
 </body>
 
 </html>

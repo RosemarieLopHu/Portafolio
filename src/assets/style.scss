@@ -1,0 +1,335 @@
+body{
+  background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/xCCDBUa/technology-or-bio-molecular-structure-with-space-for-text-4k-looped-animation-presentation-background_voflj4vnl__F0000.png);
+  font-size: 12px;
+  color: #455a64;
+}
+
+a{
+  color: #455a64;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.margin{
+  margin: 20px 0;
+}
+
+.m-bottom{
+  margin-bottom: 20px;
+}
+
+.mg-top{
+  margin-top: 100px;
+}
+
+.mg-right{
+  margin-right: 10px;
+}
+
+/* section navbar */
+.nav, .nav-wrapper{
+  line-height: 61px;
+}
+.navbar-fixed{
+  height: 0;
+}
+.navbar-color{
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.menu-mobile {
+  position: absolute;
+  transform: translateX(-100%);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  &  ul{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    & li{
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 3px;
+      width: 100%;
+      margin-bottom: 10px;
+      & a{
+        font-size: 2rem;
+        color: #455a64;
+        &:hover{
+          background-color:#CBDDDE;
+        }
+      }
+    }
+  }
+}
+
+#navClose{
+  margin-left: 10px;
+}
+
+.icon-in{
+  width: 24px;
+  margin: 5px;
+}
+
+.logo{
+  height: 64px;
+  margin-left: 3px;
+  padding: 10px;
+}
+
+/* section cover */
+.cover{
+  background: #333;
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/xCCDBUa/technology-or-bio-molecular-structure-with-space-for-text-4k-looped-animation-presentation-background_voflj4vnl__F0000.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+  &-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    &__title{
+      margin-top: 10vh;
+      text-transform: uppercase;
+      text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.1);
+      &::after{
+        margin: 5vh 0;
+        display: block;
+        content: " ";
+        height: 3px;
+        background-color: white;
+      }
+    }
+    &__subtitle{
+      font-weight: bold;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@mixin title($size, $align){
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  font-size: $size;
+  font-weight: bold;
+}
+/** section about me **/
+.section{
+  padding-top: 350px;
+  transition: all 1s linear;
+  opacity: 0.2;
+  &__title{
+    @include title(2.5rem, center);
+    &--medium{
+      @include title(1.3rem, flex-start);
+      margin-bottom: 10px;
+    }
+    &--small{
+      @include title(1rem, flex-start);
+
+    }
+    &--md{
+      @include title(1.1rem, center);
+      margin: 15px 0;
+      border-radius:7px;
+    }
+  }
+  &__text{
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: justify;
+    color: #455a64;
+    white-space: pre-line;
+    margin-bottom: 15px;
+  }
+  &__badges{
+    border: 1px solid #d0d0d0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: justify;
+    margin: 10px 0;
+    &-img{
+      width: 80px;
+      height: 80px;
+      margin-right: 5px;
+    }
+  }
+  &--active{
+    border-bottom: 3px solid #CBDDDE;
+    color: #fff;
+  }
+  &--change{
+    padding-top: 180px;
+    opacity: 1;
+  }
+  &-skill{
+    padding: 10px;
+  }
+}
+
+@keyframes spin { 50% { -webkit-transform: rotateY(90deg); transform:rotateY(90deg); } }
+
+.content-line{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.line{
+  width: 120px;
+  height: 5px;
+  margin-top: 10px;
+  background-color: #607d88;
+}
+
+.divider{
+  margin-top: 100px;
+  height: 2px;
+  background-color: rgba(200, 200, 200, 0.97);
+}
+
+/* section portfolio **/
+.section__date{
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.materialboxed{
+  cursor: zoom-in;
+  width: 100%;
+}
+
+.section__button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__button a{
+  width: 190px;
+  margin: 25px 0;
+}
+
+.indicator-item .active{
+  background-color:#CBDDDE !important;
+}
+
+/** section contact **/
+#contact{
+  color: #455a64;
+  margin-bottom: 200px;
+}
+
+.contact__text{
+  font-size: 1.5em;
+  padding-left: 10px;
+
+}
+
+/** medias queries **/
+@media only screen and (min-width: 0){
+  .section__title{
+    font-size: 2rem;
+  }
+
+  .menu-mobile ul li a {
+    font-size: 0.9rem;
+  }
+
+  .contact__text{
+    font-size: 0.9rem;
+  }
+
+  .cover-content__title{
+    font-size: 2.2rem;
+  }
+
+  .cover-content__subtitle{
+    font-size: 0.8rem;
+  }
+
+}
+
+@media only screen and (min-width: 320px){
+  .menu-mobile ul li a, .cover-content__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .contact__text{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 430px){
+  .menu-mobile ul li a {
+    font-size: 1.5rem;
+  }
+
+  .section__button{
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .contact__text{
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .cover-content__title{
+    font-size: 6rem;
+  }
+
+  .cover-content__subtitle{
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .cover-content__title{
+    font-size: 5.5rem;
+  }
+
+  .cover-content__subtitle{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .cover-content__title {
+    font-weight: bold;
+    font-size: 7rem;
+  }
+
+  .cover-content__subtitle{
+    font-size: 2rem;
+  }
+}
