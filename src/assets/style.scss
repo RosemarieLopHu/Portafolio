@@ -1,11 +1,10 @@
 body{
-  background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/xCCDBUa/technology-or-bio-molecular-structure-with-space-for-text-4k-looped-animation-presentation-background_voflj4vnl__F0000.png);
   font-size: 12px;
-  color: #455a64;
+  color: #424242;
 }
 
 a{
-  color: #455a64;
+  color: #424242;
 }
 
 .bold{
@@ -61,7 +60,7 @@ a{
       margin-bottom: 10px;
       & a{
         font-size: 2rem;
-        color: #455a64;
+        color: #424242;
         &:hover{
           background-color:#CBDDDE;
         }
@@ -87,8 +86,8 @@ a{
 
 /* section cover */
 .cover{
-  background: #333;
-  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/xCCDBUa/technology-or-bio-molecular-structure-with-space-for-text-4k-looped-animation-presentation-background_voflj4vnl__F0000.png');
+  background: #424242;
+  background-image: url('../assets/img/tech.png');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -103,8 +102,8 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-    color: white;
-    font-family: 'Exo 2', sans-serif;
+    color: #f5f5f5;
+    font-family: 'lora', sans-serif;
     &__title{
       margin-top: 10vh;
       text-transform: uppercase;
@@ -114,7 +113,7 @@ a{
         display: block;
         content: " ";
         height: 3px;
-        background-color: white;
+        background-color:rgb(245,245,245);
       }
     }
     &__subtitle{
@@ -133,7 +132,7 @@ a{
   font-size: $size;
   font-weight: bold;
 }
-/** section about me **/
+/** section about me, sobre mi **/
 .section{
   padding-top: 350px;
   transition: all 1s linear;
@@ -158,17 +157,17 @@ a{
     font-size: 1.2rem;
     font-weight: 300;
     text-align: justify;
-    color: #455a64;
+    color: #424242;
     white-space: pre-line;
     margin-bottom: 15px;
   }
   &__badges{
-    border: 1px solid #d0d0d0;
+    border: 1px solid #F5F5F5;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 300;
     text-align: justify;
     margin: 10px 0;
@@ -192,7 +191,7 @@ a{
 }
 
 @keyframes spin { 50% { -webkit-transform: rotateY(90deg); transform:rotateY(90deg); } }
-
+/* sobre mi */
 .content-line{
   display: flex;
   justify-content: space-around;
@@ -203,46 +202,20 @@ a{
   width: 120px;
   height: 5px;
   margin-top: 10px;
-  background-color: #607d88;
+  background-color: #424242;
 }
 
 .divider{
   margin-top: 100px;
   height: 2px;
-  background-color: rgba(200, 200, 200, 0.97);
+  background-color: rgba(248,248,248, 0.57);
 }
 
-/* section portfolio **/
-.section__date{
-  font-size: 1.2rem;
-  font-weight: normal;
-  margin: 10px 0;
-}
-
-.materialboxed{
-  cursor: zoom-in;
-  width: 100%;
-}
-
-.section__button{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.section__button a{
-  width: 190px;
-  margin: 25px 0;
-}
-
-.indicator-item .active{
-  background-color:#CBDDDE !important;
-}
+/* section portafolio **/
 
 /** section contact **/
 #contact{
-  color: #455a64;
+  color: #424242;
   margin-bottom: 200px;
 }
 
